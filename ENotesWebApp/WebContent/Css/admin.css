@@ -1,0 +1,377 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;/*removes underline*/
+    list-style: none;/*removes discs*/
+    box-sizing: border-box;
+}
+/*FOR CSS VARIABLES*/
+/*1 rem=16px*/
+
+
+
+
+.container
+{
+    width: var(--container-width-lg);
+    margin:0 auto;/*top and bottom to 0 and left and right margin to auto*/
+}
+section
+{
+    padding: 6rem 0;
+
+}
+section h2
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5
+{
+    line-height: 1.2;
+}
+h1
+{
+    font-size: 2.4rem;
+}
+h2
+{
+    font-size:2rem;
+}
+h3
+{
+    font-size: 1.6rem;
+}
+h4
+{
+    font-size: 1.3rem;
+}
+a
+{
+    color:var(--color-white);
+}
+img
+{
+    width: 100%;
+    display:block;/*block block ma chuttaune just like paragraphs*/
+    object-fit: cover;
+}
+.btn
+{
+    display: inline-block;
+    background:var(--color-white);
+    color:var(--color-black);
+    padding:1rem 2rem;
+    border:1px solid transparent;
+    font-weight: 500;
+    transition:var(--transition);
+}
+.btn:hover
+{
+    background:transparent;
+    color:var(--color-white);
+    border-color:var(--color-white);
+}
+.btn-primary
+{
+    color:var(--color-white);
+    background: var(--color-danger);
+
+}
+/*change navbar styles on scroll using js*/
+
+
+header
+{
+    position: relative;
+    top:5rem;
+    overflow:hidden;/*contents dherai chha bhane cut handinchha*/
+    height:70vh;/*In CSS, the "viewport height" refers to the height of the viewport, which is the visible portion of the browser window.*/
+    margin-bottom: 12rem;/*1 rem=16px*/
+}
+.header__container
+{
+    display: grid;/*make grids in the page*/
+    grid-template-columns: 1fr 1fr;/*--divides the current space into two equal parts or grids--*/
+    /*grid-template-columns:auto auto is different then 1fr 1fr because it occupies space according to its contents*/
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+.header__left p
+{
+    margin:1rem 0 2.4rem;/*top (left right) bottom*/
+}
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;/*removes underline*/
+    list-style: none;/*removes discs*/
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    
+    color:var(--color-white);/*CALLING CSS VARIABLES*/  
+    
+    background:#1f2641;
+}
+
+.container
+{
+	
+    width: 100%;
+    margin:0 auto;/*top and bottom to 0 and left and right margin to auto*/
+    
+    margin-bottom:2rem;
+    padding-left: calc(15% - 20px);
+    padding-right: calc(15% - 20px);
+    
+    
+    
+}
+.container4{
+	width: 50%;
+    margin:0 auto;/*top and bottom to 0 and left and right margin to auto*/
+    
+    margin-bottom:2rem;
+    padding-left: calc(15% - 20px);
+    padding-right: calc(15% - 20px);
+}
+
+.container .card-title{
+color:black;
+}
+.container p {
+color:black;
+}
+
+.container1
+{
+    width: var(--container-width-lg);
+    margin:0 auto;/*top and bottom to 0 and left and right margin to auto*/
+    margin-bottom:8rem;
+}
+.container2 {
+	width: var(--container-width-lg);
+    margin:0 auto;/*top and bottom to 0 and left and right margin to auto*/
+    margin-bottom:2rem;
+}
+.container2 p{
+	color:white;
+}
+section
+{
+    padding: 6rem 0;
+
+}
+section h2
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5
+{
+    line-height: 1.2;
+}
+h1
+{
+    font-size: 2.4rem;
+}
+h2
+{
+    font-size:2rem;
+}
+h3
+{
+    font-size: 1.6rem;
+}
+h4
+{
+    font-size: 1.3rem;
+}
+a
+{
+    color:var(--color-white);
+}
+img
+{
+    width: 100%;
+    display:block;/*block block ma chuttaune just like paragraphs*/
+    object-fit: cover;
+}
+
+
+
+footer
+{
+    background:var(--color-bg1);
+    padding-top: 3rem;
+    font-size: 0.9rem;
+    /* padding-bottom: 3rem; */
+    /* added new code
+    position:fixed;
+    bottom:0;
+    width:100%;
+    */
+}
+.footer__container
+{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+    margin-bottom:2rem;
+}
+.footer__container > div h4 {
+    margin-bottom: 1.2rem;
+}
+.footer__1 p {
+    margin: 0 0 2rem;
+}
+.footer ul li {
+    margin-bottom:0.7rem;
+}
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    font-size:1.2rem;
+    margin-top: 2rem;
+}
+.footer__trademark {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1.2rem 0;
+    /*Use border top/bottom more rather than hr tags*/
+    border-top: 1px solid var(--color-bg2);
+}
+
+
+/*FOR CSS VARIABLES*/
+/*1 rem=16px*/
+:root
+{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;    
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color:var(--color-white);/*CALLING CSS VARIABLES*/
+    background:var(--color-bg);
+}
+.container
+{
+    width: var(--container-width-lg);
+    margin:0 auto;/*top and bottom to 0 and left and right margin to auto*/
+}
+section
+{
+    padding: 6rem 0;
+
+}
+section h2
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5
+{
+    line-height: 1.2;
+}
+h1
+{
+    font-size: 2.4rem;
+}
+h2
+{
+    font-size:2rem;
+}
+h3
+{
+    font-size: 1.6rem;
+}
+h4
+{
+    font-size: 1.3rem;
+}
+a
+{
+    color:var(--color-white);
+}
+
+/*========NAVBAR=======*/
+nav
+{
+    background:transparent;
+    width: 100vw;
+    height:5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;/*it will place element above other element--negative==below*/
+    /*only applicable for position fixed,absolute or relative not for static*/
+}
+/*change navbar styles on scroll using js*/
+.window-scroll
+{
+    background:var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+.nav__container
+{
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav button
+{
+    display: none;
+}
+.nav__menu
+{
+    display: flex;/*horizontal grids*/
+    align-items: center;
+    gap:4rem;
+}
+.nav__menu a
+{
+    font-size: 0.9rem;
+    transition: var(--transition);/*Home,courses touch garda slowly hover hune transition of 400ms*/
+}
+.nav__menu a:hover
+{
+    color:var(--color-bg2);
+}
